@@ -43,7 +43,7 @@ export class DateWithTime {
         document.getElementById('clock').innerHTML = hours + ':' + minutes + ':' + seconds;
 
         this.slide = Math.floor((hours % 24) / 6);
-        this.bgElement.style.backgroundImage = `url(/${this.bgImages[this.slide]})`;
+        this.bgElement.style.backgroundImage = `url(./${this.bgImages[this.slide]})`;
     } // Метод для отображения времени и фона
 
     date() {
